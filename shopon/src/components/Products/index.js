@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 function Products({products}) {
   return (
@@ -8,7 +9,7 @@ function Products({products}) {
 
       {
         products.map((item)=>(
-          <div className="lg:w-1/4 md:w-1/2 p-4 w-full border border-opacity-50 mb-2 cursor-pointer">
+          <Link to={`/products/${item.id}`} className="lg:w-1/4 md:w-1/2 p-4 w-full border border-opacity-50 mb-2 cursor-pointer">
           <a className="block relative h-48 rounded overflow-hidden">
             <img alt={item.title} className="object-contain object-center w-full h-full block" src={item.image}/>
           </a>
@@ -17,7 +18,7 @@ function Products({products}) {
             <h2 className="text-gray-900 title-font text-lg font-medium">{item.title}</h2>
             <p className="mt-1 text-md font-semibold">${item.price}</p>
           </div>
-        </div>
+        </Link>
 
         ))
       }
