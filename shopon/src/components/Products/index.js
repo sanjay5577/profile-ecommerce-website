@@ -35,6 +35,11 @@ function Products({ products }) {
                     className="object-contain object-center w-full h-full block"
                     src={item.image}
                   />
+                  {(item.id === 1 || item.id === 6 || item.id === 15) && (
+                    <div class="absolute top-0 left-0 bg-green-500 text-white px-1 py-1 text-sm font-semibold">
+                      Best Seller
+                    </div>
+                  )}
                 </a>
                 <div className="mt-4">
                   <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1 uppercase">

@@ -14,7 +14,7 @@ function Header() {
           <span className="ml-3 text-xl">ShopOn</span>
         </Link>
 
-        <div className="relative lg:w-1/3 w-3/4">
+        <div className="relative md:w-1/3 w-3/4">
           <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
             <svg
               className="w-4 h-4 text-gray-500 dark:text-gray-400"
